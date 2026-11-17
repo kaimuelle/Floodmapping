@@ -38,52 +38,36 @@ To run the notebooks, Python, Jupyter Notebook and the following Python librarie
 Download the required Sen1Floods11 images and put them into the following folders like so:
 
 
-*project/
-├── data/
-│   ├── S1Hand/
-│   │   └── Bolivia\_23014\_S1Hand
-│   └── LabelHand/
-│       └── Bolivia\_23014\_LabelHand
-├── floodproject/\_mekongsrilanka.ipynb
-├── floodproject/\_spain.ipynb
-├── floodproject/\_somali.ipynb
-└── unet/\_95epochs.pth* 
+
+*project/*
+
+*├── data/*
+
+*│   ├── S1Hand/*
+
+*│   │   	├── Spain\_8565131\_S1Hand.tif*
+
+*│   │  	   └── ...*
+
+*│   └── LabelHand/*
+
+*│      	   ├── Spain\_8565131\_LabelHand.tif*
+
+*│     	  └── ...*
+
+*├── floodproject\_mekongsrilanka.ipynb*
+
+*├── floodproject\_spain.ipynb*
+
+*├── floodproject\_somali.ipynb*
+
+*├── unet\_95epochs.pth*
+
+*└── README.md*
 
 
 
-
-
-project/
-
-├── data/
-
-│   ├── S1Hand/
-
-│   │   ├── Spain\_8565131\_S1Hand.tif
-
-│   │   └── ...
-
-│   └── LabelHand/
-
-│       ├── Spain\_8565131\_LabelHand.tif
-
-│       └── ...
-
-├── floodproject\_mekongsrilanka.ipynb
-
-├── floodproject\_spain.ipynb
-
-├── floodproject\_somali.ipynb
-
-├── unet\_95epochs.pth
-
-└── README.md
-
-
-
-
-
-If necessary rename the downloaded files so that the image IDs match the format used in the notebooks. Run the notebooks from the project folder because the code uses relative paths.
+If necessary rename the downloaded files so that the image IDs match the format used in the notebooks (like above). Run the notebooks from the project folder because the code uses relative paths.
 
 For testing without retraining, the saved model file "unet\_95epochs.pth" is available in the project folder. 
 
