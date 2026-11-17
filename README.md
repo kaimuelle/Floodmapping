@@ -51,6 +51,38 @@ Download the required Sen1Floods11 images and put them into the following folder
 
 
 
+
+
+project/
+
+├── data/
+
+│   ├── S1Hand/
+
+│   │   ├── Spain\_8565131\_S1Hand.tif
+
+│   │   └── ...
+
+│   └── LabelHand/
+
+│       ├── Spain\_8565131\_LabelHand.tif
+
+│       └── ...
+
+├── floodproject\_mekongsrilanka.ipynb
+
+├── floodproject\_spain.ipynb
+
+├── floodproject\_somali.ipynb
+
+├── unet\_95epochs.pth
+
+└── README.md
+
+
+
+
+
 If necessary rename the downloaded files so that the image IDs match the format used in the notebooks. Run the notebooks from the project folder because the code uses relative paths.
 
 For testing without retraining, the saved model file "unet\_95epochs.pth" is available in the project folder. 
