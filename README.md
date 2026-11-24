@@ -36,31 +36,19 @@ To run the notebooks, Python, Jupyter Notebook and the Python libraries describe
 
 ```text*
 
-*project/*
-
-*├── data/*
-
-*│   ├── S1Hand/*
-
-*│   │   ├── Spain\_8565131\_S1Hand.tif*
-
-*│   │   └── ...*
-
-*│   └── LabelHand/*
-
-*│       ├── Spain\_8565131\_LabelHand.tif*
-
-*│       └── ...*
-
-*├── notebooks/*
-
-*├── scripts/*
-
-*├── trainedmodel\_95epochs.pth*
-
-*├── environment.yml*
-
-*└── README.md*
+project/
+├── data/
+│   ├── S1Hand/
+│   │   ├── Spain\_8565131\_S1Hand.tif
+│   │   └── ...
+│   └── LabelHand/
+│       ├── Spain\_8565131\_LabelHand.tif
+│       └── ...
+├── notebooks/
+├── scripts/
+├── trainedmodel\_95epochs.pth
+├── environment.yml
+└── README.md
 
 ```
 
