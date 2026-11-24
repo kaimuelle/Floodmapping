@@ -34,7 +34,7 @@ To run the notebooks, Python, Jupyter Notebook and the Python libraries describe
 
 
 
-*```text*
+```text*
 
 *project/*
 
@@ -62,7 +62,7 @@ To run the notebooks, Python, Jupyter Notebook and the Python libraries describe
 
 *└── README.md*
 
-*```*
+```
 
 The notebooks etc. use relative paths so downloading the whole project/repository as it is, is recommended.
 
