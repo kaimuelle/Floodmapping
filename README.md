@@ -38,10 +38,10 @@ To run the notebooks, Python, Jupyter Notebook and the Python libraries describe
 project/
 ├── data/
 │   ├── S1Hand/
-│   │   ├── Spain\_8565131\_S1Hand.tif
+│   │   ├── Spain_8565131_S1Hand.tif
 │   │   └── ...
 │   └── LabelHand/
-│       ├── Spain\_8565131\_LabelHand.tif
+│       ├── Spain_8565131_LabelHand.tif
 │       └── ...
 ├── notebooks/
 ├── scripts/
