@@ -1,1 +1,5 @@
-data/
+data/S1Hand/*
+data/LabelHand/*
+
+!data/S1Hand/.gitkeep
+!data/LabelHand/.gitkeep
