@@ -35,7 +35,6 @@ To run the notebooks, Python, Jupyter Notebook and the Python libraries describe
 
 
 ```text*
-
 project/
 ├── data/
 │   ├── S1Hand/
@@ -49,7 +48,6 @@ project/
 ├── trainedmodel\_95epochs.pth
 ├── environment.yml
 └── README.md
-
 ```
 
 The notebooks etc. use relative paths so downloading the whole project/repository as it is, is recommended.
