@@ -4,7 +4,7 @@
 
 **Summary:**
 
-This project uses Sentinel-1 SAR satellite images and a U-Net neural network to identify water areas. The research question is: 
+This project uses Sentinel-1 SAR satellite images and a U-Net neural network to identify water areas. The research question is:
 
 "How well does a U-Net trained on Sentinel-1 SAR imagery generalize to flood events in geographically unseen regions?"
 
@@ -16,26 +16,21 @@ The model was trained using images from Sri Lanka and the Mekong region and test
 
 The satellite images and corresponding water labels come from the Sen1Floods11 dataset (Bonafilia et al., 2020).
 
-* Dataset: https://github.com/cloudtostreet/Sen1Floods11
+* Dataset description: https://github.com/cloudtostreet/Sen1Floods11 
+* Data download: shorturl.ly/yQ-Ah 
 * Satellite data: Sentinel-1 SAR imagery
 
-Each image is a 512 × 512 pixel GeoTIFF file with labels such as 1 = water, 0 = non-water, -1 = invalid pixel
+Each image is a 512 × 512 pixel GeoTIFF file with labels such as 1 = water, 0 = non-water, -1 = invalid pixel.
 
 
 
 **Setup Instructions:**
 
-To run the notebooks, Python, Jupyter Notebook and the following Python libraries are required:
-
-* numpy
-* matplotlib
-* rasterio
-* torch (PyTorch)
-* segmentation-models-pytorch
+To run the notebooks, Python, Jupyter Notebook and the Python libraries described in the env file are needed.
 
 
 
-Download the required Sen1Floods11 images and put them into the following folders like so:
+* The data needed can be download from the Sen1Floods11 bucket (shorturl.ly/yQ-Ah) and then needs to be put into the following folders like described below. More about how to access the data, name it correctly and how to use the python script to automate it, can be found in the data/README.
 
 
 
@@ -45,7 +40,7 @@ Download the required Sen1Floods11 images and put them into the following folder
 
 *│   ├── S1Hand/*
 
-*│   │   	├── Spain\_8565131\_S1Hand.tif*
+*│   │      ├── Spain\_8565131\_S1Hand.tif*
 
 *│   │  	   └── ...*
 
@@ -53,23 +48,19 @@ Download the required Sen1Floods11 images and put them into the following folder
 
 *│      	   ├── Spain\_8565131\_LabelHand.tif*
 
-*│     	  └── ...*
+*│     	   └── ...*
 
-*├── floodproject\_mekongsrilanka.ipynb*
+*├── notebooks/*
 
-*├── floodproject\_spain.ipynb*
+*├── scripts/*
 
-*├── floodproject\_somali.ipynb*
-
-*├── unet\_95epochs.pth*
+*├── trainedmodel\_95epochs.pth*
 
 *└── README.md*
 
 
 
-If necessary rename the downloaded files so that the image IDs match the format used in the notebooks (like above). Run the notebooks from the project folder because the code uses relative paths.
-
-For testing without retraining, the saved model file "unet\_95epochs.pth" is available in the project folder. 
+The notebooks etc. use relative paths so downloading the whole project/repository as it is, is recommended.
 
 
 
@@ -77,11 +68,11 @@ For testing without retraining, the saved model file "unet\_95epochs.pth" is ava
 
 There are three notebooks, one for Sri Lanka/Mekong, one for Spain, and one for Somalia.
 
-If you wish to do the Training yourself and not use the pretrained model, then you can just open one of the notebooks and run it from top to bottom. If you are using the saved model however then do not run the training cell again and only run the first three (preparation) and the last three cells (evaluation).
+If you wish to do the training yourself and not use the pretrained model, then you can just open one of the notebooks and run it from top to bottom. If you are using the saved model however then do not run the training cell again and only run the first three (preparation) and the last three cells (evaluation). The already trained and saved model file is "trainedmodel\_95epochs.pth".
 
 
 
-The classification threshold can be changed in the notebooks. The original comparison uses 0.5 for all regions. For spain 0.3 was also used as it yielded better results. Somalia was evaluated also with 0.09.
+The classification threshold can be changed in the notebooks. The original comparison uses 0.5 for all regions. For Spain 0.3 was also used as it yielded better results. Somalia was evaluated also with 0.09.
 
 
 
@@ -91,9 +82,15 @@ The model identifies water but not necessarily new flooding. This is because the
 
 
 
+**AI use:**
+
+Some parts of the notebooks have been created with the help of LLM's but all of the final code and writings have been verified and completed by me. 
+
+The script to rename and move the downloaded data is done fully by ChatGPT and not by myself.
+
+
+
 **Reference:**
 
 Bonafilia, D., Tellman, B., Anderson, T., \& Issenberg, E. (2020). *Sen1Floods11: A georeferenced dataset to train and test deep learning flood algorithms for Sentinel-1*. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops.
-
-
 
