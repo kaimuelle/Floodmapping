@@ -45,7 +45,7 @@ project/
 │       └── ...
 ├── notebooks/
 ├── scripts/
-├── trainedmodel\_95epochs.pth
+├── trainedmodel_95epochs.pth
 ├── environment.yml
 └── README.md
 ```
