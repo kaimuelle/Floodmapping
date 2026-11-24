@@ -16,8 +16,8 @@ The model was trained using images from Sri Lanka and the Mekong region and test
 
 The satellite images and corresponding water labels come from the Sen1Floods11 dataset (Bonafilia et al., 2020).
 
-* Dataset description: https://github.com/cloudtostreet/Sen1Floods11 
-* Data download: shorturl.ly/yQ-Ah 
+* Dataset description: https://github.com/cloudtostreet/Sen1Floods11
+* Data download: shorturl.ly/yQ-Ah
 * Satellite data: Sentinel-1 SAR imagery
 
 Each image is a 512 × 512 pixel GeoTIFF file with labels such as 1 = water, 0 = non-water, -1 = invalid pixel.
@@ -84,9 +84,9 @@ The model identifies water but not necessarily new flooding. This is because the
 
 **AI use:**
 
-Some parts of the notebooks have been created with the help of LLM's but all of the final code and writings have been verified and completed by me. 
+Some parts of the notebooks have been created with the help of LLM's but all of the final code and writings have been verified and completed by me.
 
-The script to rename and move the downloaded data is done fully by ChatGPT and not by myself.
+The script to rename and move the downloaded data ("filetransfer\_renaming") is done fully by ChatGPT and not by myself.
 
 
 

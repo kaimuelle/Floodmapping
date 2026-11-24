@@ -1,0 +1,15 @@
+name: sds-env
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - numpy
+  - matplotlib
+  - rasterio
+  - jupyter
+  - pip
+  - pip:
+      - torch
+      - segmentation-models-pytorch
